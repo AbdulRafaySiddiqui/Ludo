@@ -1,2 +1,2 @@
 # Ludo
-A simple Ludo game  programmed using C# and designed with XAML.
+A simple Ludo game project built with WPF.

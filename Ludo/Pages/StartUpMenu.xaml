@@ -1,0 +1,59 @@
+﻿<Page x:Class="Ludo.StartUpMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Ludo"
+      mc:Ignorable="d" 
+      Title="StartUpMenu">
+
+    <Viewbox>
+    <Grid x:Name="grid">
+        <StackPanel>
+            <Image Margin="0 50 0 0" Source="pack://application:,,,/Logo/ludo.jpg" Height="200"/>
+            <TextBlock Text="Select Number Of Players"
+                           FontSize="48"
+                           HorizontalAlignment="Center"
+                           Margin="50"
+                           Foreground="White"
+                           Padding="50 10 50 10"
+                           Background="Blue"
+                           FontWeight="SemiBold"/>
+
+            <StackPanel Margin="50" Orientation="Horizontal"
+                            HorizontalAlignment="Center">
+                <Button Style="{StaticResource IconGrowButton}"
+                        Content="2"
+                        FontSize="48"
+                        Background="Orange"
+                        Foreground="White"
+                        FontWeight="SemiBold"
+                        Margin="50"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                            Command="{Binding StartGameCommand}"    
+                        />
+                <Button Style="{StaticResource IconGrowButton}"
+                            Content="3"
+                            FontSize="48"
+                            Background="Orange"
+                            Foreground="White"
+                            FontWeight="SemiBold"
+                            Margin="50"
+                            CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                            Command="{Binding StartGameCommand}"    
+                            />
+                <Button Style="{StaticResource IconGrowButton}"
+                            Content="4"
+                            FontSize="48"
+                            Background="Orange"
+                            Foreground="White"
+                            FontWeight="SemiBold"
+                            Margin="50"
+                            CommandParameter="{Binding RelativeSource={RelativeSource Self}}"
+                            Command="{Binding StartGameCommand}"    
+                            />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+    </Viewbox>
+</Page>
